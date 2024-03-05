@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+.body html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    /* background-color: #27272E; */
+    background-color: #101011;
+    /* position: fixed;
+    width: 100%;
+    height: auto; */
+}
+.r1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white    ;
+}
+.navbar{
+    display: none;
+    font-size: 2.125rem;
+}
+
+@media (max-width : 768px){
+    nav {
+        display: none;
+    }
+    .navbar {
+        display:block ;
+    }
+}
+
+.bgimg{
+    background-image: url(./img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0 20px;
+}
+.bgicon{
+    font-size: 24px;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.bgicon i{
+    background-color: rgb(8, 8, 8);
+    color: rgb(140, 213, 255);
+    padding: 8px 10px;
+    border: 1px solid rgb(75, 145, 185);
+    border-radius: 50px;
+}
+.bgicon i:hover{
+    color: rgb(90, 213, 230);
+    transition: all 0.3s ease-in;
+    box-shadow: rgba(53, 215, 226, 0.623) 0px 5px 15px;
+}
+.bg-txt{
+    color: white;
+    padding-top: 70px;
+    text-align: left;
+}
+.bg-txt h2{
+    font-size: 58px;
+    font-weight: 800;
+}
+.bg-txt h4{
+    font-size: 30px;
+    font-weight: 500;
+}
+.bg-txt a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #27272E;
+    border-radius: 6px;
+    /* box-shadow: 0 10px 20px rgba(31, 30, 30, 0.19), 0 6px 6px rgba(20, 20, 20, 0.23); */
+    box-shadow: 0 14px 28px rgba(32, 32, 32, 0.25), 0 10px 10px rgba(27, 27, 27, 0.22);
+}
+.bg-txt a:hover{
+    color: rgb(112, 203, 219);
+    transition: all 0.3s ease-in;
+    box-shadow: 0 10px 20px rgba(149, 214, 223, 0.19), 0 6px 6px rgba(156, 228, 233, 0.23);
+}
+
+@media (max-width : 768px){
+    .bg-txt{
+        text-align: center;
+    }
+}
+
+/* service */
+.service{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.service-head{
+    text-align: center;
+    color: white;
+    padding: 120px 0 40px;
+}
+.service-head h2{
+    font-weight: 700;
+}
+.service-head span{
+    padding: 10px 0;
+}
+.service-head span:hover{
+    border-bottom: 2px solid rgb(121, 245, 245);
+    color: rgb(121, 245, 245);
+    transition: all 0.2s ease;
+}
+.service-bord{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 65px 45px 10px 45px;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.service-bord:hover{
+    box-shadow: 0 14px 28px rgba(161, 241, 252, 0.25), 0 10px 10px rgba(13, 206, 240, 0.22);
+    transition: all 0.3s ease-in;
+}
+.service-icon i{
+    color: rgb(140, 213, 255);
+    font-size: 50px;
+}
+.service-txt h2{
+    color: white;
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+.service-txt p{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.service-txt a{
+    color: rgb(121, 245, 245);
+    font-size: 30px;
+}
+.service-txt p{
+    color: white;
+}
+
+/* about me */
+.about-me{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.about-head{
+    text-align: center;
+    color: white;
+    padding: 120px 0 40px;
+}
+.about-head span{
+    padding: 10px 0;
+}
+.about-head span:hover{
+    border-bottom: 2px solid rgb(121, 245, 245);
+    color: rgb(121, 245, 245);
+    transition: all 0.2s ease;
+}
+.about-txt{
+    padding-left: 30px;
+}
+.about-txt1 h3{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.about-txt2 p{
+    color: white;
+    font-size: 20px;
+}
+.about-txt3{
+    background-color: #3f3f44;
+    border-radius: 20px;
+    padding: 20px 0px 24px 0px;
+    color: white;
+}
+.about-txt3 span{
+    color: rgb(121, 245, 245);
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-txt3 p{
+    font-size: 16px;
+}
+.about-txt a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    background-color: #3b3b3d;
+    font-weight: 500;
+    border-radius: 6px;
+    box-shadow: 10px 14px 28px rgba(32, 32, 32, 0.25), 0 10px 10px rgba(27, 27, 27, 0.22);
+}
+.about-txt a:hover{
+    color: rgb(112, 203, 219);
+    transition: all 0.3s ease-in;
+    box-shadow: 0 10px 20px rgba(149, 214, 223, 0.19), 0 6px 6px rgba(156, 228, 233, 0.23);
+}
+
+/*  my resume */
+
+.resume{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.resume-head{
+    text-align: center;
+    color: white;
+    padding: 120px 0 40px;
+}
+.resume-head span{
+    padding: 10px 0;
+}
+.resume-head span:hover{
+    border-bottom: 2px solid rgb(121, 245, 245);
+    color: rgb(121, 245, 245);
+    transition: all 0.2s ease;
+}
+.resume-edu-ex{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 40px 50px 30px 38px;
+    border-radius: 20px;
+    height: 100%;
+}
+.resume-edu-ex:hover{
+    box-shadow: 0 14px 28px rgba(161, 241, 252, 0.25), 0 10px 10px rgba(13, 206, 240, 0.22);
+    transition: all 0.3s ease-in;
+}
+.resume-bord{
+    border-left: 2px solid rgb(121, 245, 245);
+}
+.be{
+    color: rgb(121, 245, 245);
+}
+
+/* my skill */
+.my-skill{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.skill-head{
+    text-align: center;
+    color: white;
+    padding: 120px 0 40px;
+}
+.skill-head span{
+    padding: 10px 0;
+}
+.skill-head span:hover{
+    border-bottom: 2px solid rgb(121, 245, 245);
+    color: rgb(121, 245, 245);
+    transition: all 0.2s ease;
+}
+.skill-bord{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 20px 70px 30px 70px;
+    border-radius: 20px;
+    color: white;
+}
+.skill-bord:hover{
+    box-shadow: rgba(161, 241, 252, 0.25) 0px 6px 12px -2px, rgba(13, 206, 240, 0.22) 0px 3px 7px -3px;
+    transition: all 0.4s ease-in;
+}
+
+/* my portfolio */
+
+.project{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.project-head{
+    text-align: center;
+    color: white;
+    padding: 120px 0 40px;
+}
+.project-head span{
+    padding: 10px 0;
+}
+.project-head span:hover{
+    border-bottom: 2px solid rgb(121, 245, 245);
+    color: rgb(121, 245, 245);
+    transition: all 0.2s ease;
+}
+.projects{
+    padding: 30px;
+    border-radius: 20px;
+}
+.projects1{
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.projects1:hover{
+    box-shadow: 0 14px 28px rgba(161, 241, 252, 0.25), 0 10px 10px rgba(13, 206, 240, 0.22);
+    transition: all 0.3s ease-in;
+}
+.project-a a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.project-a a:hover{
+    color: rgb(112, 203, 219);
+    background-color: #424244;
+    transition: all 0.3s ease-in;
+}
+.card-body{
+    background-color: #4d4d53;
+    color: white;
+}
+.project-img1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.project-img{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card-footer{
+    background-color: #4d4d53;
+    color: white;
+}
+
+/* hiring */
+.hireme{
+    background-color: #27272E;
+    padding:40px 30px 20px 30px;
+}
+.hire{
+    background-image: url(./img/intro-bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(94, 240, 126);
+    padding: 180px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.hireb{
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #424244;
+    border-radius: 6px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.19), 0 10px 10px rgba(0, 0, 0, 0.23);
+}
+.hireb:hover{
+    color: rgb(121, 245, 245);
+    transition: all 0.3s ease-in;
+    box-shadow: 10px 28px 28px rgba(0, 0, 0, 0.19), 10px 10px 10px rgba(0, 0, 0, 0.23);
+}
+
+/* faq */
+
+.faq{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.faq-bord{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 30px 40px 30px 50px;
+    border-radius: 20px;
+    margin: 0 30px;
+}
+.faq-bord:hover{
+    box-shadow: 0 14px 28px rgba(161, 241, 252, 0.25), 0 10px 10px rgba(13, 206, 240, 0.22);
+    transition: all 0.3s ease-in;
+}
+.faq-name{
+    font-size: 40px;
+    font-weight: 500;
+}
+.faq-name1{
+    font-size: 28px ;
+    font-weight: 300;
+}
+.faq-img{
+    padding: 30px 40px 30px 40px ;
+}
+.faq-bg{
+    background-color: #27272E;
+}
+.accordion-button{
+    background-color: #27272E !important;
+}
+
+/* contect */
+.contect{
+    background-color: #27272E;
+    padding:0 30px;
+}
+.contect-head{
+    text-align: center;
+    color: white;
+    padding: 120px 0 40px;
+}
+.contect-head span{
+    padding: 10px 0 ;
+}
+.contect-head span:hover{
+    border-bottom: 2px solid rgb(121, 245, 245);
+    color: rgb(121, 245, 245);
+    transition: all 0.2s ease;
+}
+.contect-bord{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: 0 20px;
+    height: 100%;
+    border-radius: 8px;
+    padding: 30px 60px 30px 60px;
+}
+.contect-bord:hover{
+    box-shadow: 0 14px 28px rgba(161, 241, 252, 0.25), 0 10px 10px rgba(13, 206, 240, 0.22);
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+.contect-title{
+    font-weight: 700;
+}
+.contect-info1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.contect-form input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(110, 103, 103);
+}
+.contect-form textarea{
+    width: 100%;
+    height: 110px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(110, 103, 103);
+}
+.contect-send{
+    text-decoration: none;
+    color: white;
+    background-color: #27272E;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(44, 43, 43, 0.19), 0 6px 6px rgba(126, 119, 119, 0.23);
+}
+.contect-send:hover{
+    color: rgb(121, 245, 245);
+    transition: all 0.3s ease-in;
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+    padding:40px 30px;
+}
+.footer-bord{
+    padding:0 8vw;
+}
